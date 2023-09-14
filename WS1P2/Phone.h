@@ -7,6 +7,15 @@
 
 namespace sdds {
 	void phoneDir(const char* programTitle, const char* fileName);
+	struct Person reader(char input, const char* fileName);
+	void compare(struct Person person[], );
+
+	struct Person {
+		char name[50];
+		int areaCode[50];
+		int prefix[50];
+		int number[50];
+	};
 
 }
 
