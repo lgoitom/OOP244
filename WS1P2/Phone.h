@@ -3,19 +3,31 @@
 #ifndef SDDS_PHONE_H
 #define SDDS_PHONE_H
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <iostream>
+#include <iomanip>
+#include <ctype.h>
+#include <cstring>
+#include <string.h>
 
 namespace sdds {
-	void phoneDir(const char* programTitle, const char* fileName);
-	struct Person reader(char input, const char* fileName);
-	void compare(struct Person person[], );
-
 	struct Person {
-		char name[50];
-		int areaCode[50];
-		int prefix[50];
-		int number[50];
+		char name[51];
+		char areaCode[50];
+		char prefix[50];
+		char number[50];
 	};
+
+	// runs the phone directory application
+	void phoneDir(const char* programTitle, const char* fileName);
+	//void reader(const char* fileName, struct Person);
+	void lower(char* str);
+	int check(const char* s1, const char* s2);
+	int readFile(const char* fileName, Person* p, char ch[][100], int maxRecords);
+	int caseCheck(const char* list, const char* input);
+
+
 
 }
 
