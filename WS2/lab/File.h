@@ -18,8 +18,8 @@ namespace sdds {
    int noOfRecords();
    // TODO: Declare overloaded read function prototypes
    bool read(char*& name);
-   bool read(int employeeNum);
-   bool read(double salary);
+   bool read(int& employeeNum);
+   bool read(double& salary);
 
 }
 

@@ -37,26 +37,26 @@ namespace sdds {
    }
    // TODO: read functions go here    
    bool read(char*& name) {
-       char empName[128];
-       int i;
+       char empName[128] = { '\0' };
 
            if (fscanf(fptr, "%127[^\n]\n", &empName) == 1) {
-               char *j = new char;
-               //name == new char
-               strcpy(j, empName);
+               name = new char[strlen(empName) + 1];
                
-               return true;
+               strcpy(name, empName);
+
+
+               
            }
-       return false;
+       return empName[0] != 0;
    }
-   bool read(int employeeNum) {
-       if (fscanf(fptr, "%d,", &employeeNum)) {
+   bool read(int& employeeNum) {
+       if (fscanf(fptr, "%d,", &employeeNum) == 1) {
            return true;
        }
       return false;
    }
-   bool read(double salary) {
-       if (fscanf(fptr, "%lf,", &salary)) {
+   bool read(double& salary) {
+       if (fscanf(fptr, "%lf,", &salary) == 1) {
            return true;
        }
        return false;

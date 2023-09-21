@@ -10,6 +10,7 @@
 // -----------------------------------------------------------
 // Name            Date            Reason
 ***********************************************************************/
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include "Employee.h"
 #include "File.h"
@@ -38,12 +39,11 @@ namespace sdds {
    // TODO: Finish the implementation of the 1 arg load function which
    // reads one employee record from the file and loads it into the employee reference
    // argument
-   bool load(Employee &emp) {
+   bool load(Employee& emp) {
       bool ok = false;
-      char* name[128];
-      if (read(emp.m_empNo), read(emp.m_salary), read(emp.m_name)) {
+      
+      if (read(emp.m_empNo) && read(emp.m_salary) && read(emp.m_name)){
 
-          //strcpy(*name, employees->m_name);
           ok = true;
       }
       // return the combined success result of the three read functions. These read 
@@ -82,10 +82,11 @@ namespace sdds {
    // TODO: Implementation for the display functions go here
    void display(Employee& employees) {
        //noOfEmployees = load(employees);
-       cout.put(employees.m_empNo) << ": ";
-       cout.put(*employees.m_name) << ", ";
-       cout.put(employees.m_salary);
-       
+       cout << employees.m_empNo << ": " << employees.m_name << ", $";
+       cout.setf(ios::fixed);
+       cout.precision(0);
+       cout << employees.m_salary << endl;
+       //return read(employees.m_empNo) && read(employees.....) && read(.....);
 
    }
    //int recs = noOfRecords();
@@ -100,7 +101,7 @@ namespace sdds {
        for (i = 0; i < noOfEmployees; i++) {
 
            //const Employee& person = employees[i];
-           cout << i + 1 << "- " << employees[i].m_empNo;
+           cout << i + 1 << "- ";
            display(employees[i]);
       }
    }
