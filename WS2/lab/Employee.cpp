@@ -97,7 +97,7 @@ namespace sdds {
        sort();
 
        int i;
-       for (i = 0; i < noOfEmployees, i++;) {
+       for (i = 0; i < noOfEmployees; i++) {
 
            //const Employee& person = employees[i];
            cout << i + 1 << "- " << employees[i].m_empNo;
