@@ -8,7 +8,8 @@
 //    To be completed by students
 // Revision History
 // -----------------------------------------------------------
-// Name            Date            Reason
+// Name                Date            Reason
+// Luwam Goitom-Worre  Sept. 21, 2023  completing workshop
 ***********************************************************************/
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
@@ -39,13 +40,9 @@ namespace sdds {
    bool read(char*& name) {
        char empName[128] = { '\0' };
 
-           if (fscanf(fptr, "%127[^\n]\n", &empName) == 1) {
+           if (fscanf(fptr, "%127[^\n]\n", empName) == 1) {
                name = new char[strlen(empName) + 1];
-               
                strcpy(name, empName);
-
-
-               
            }
        return empName[0] != 0;
    }

@@ -8,7 +8,8 @@
 //    To be completed by students
 // Revision History
 // -----------------------------------------------------------
-// Name            Date            Reason
+// Name                Date            Reason
+// Luwam Goitom-Worre  Sept. 21, 2023  completing workshop
 ***********************************************************************/
 #ifndef SDDS_FILE_H_
 #define SDDS_FILE_H_

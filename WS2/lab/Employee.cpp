@@ -8,7 +8,8 @@
 //    To be completed by students
 // Revision History
 // -----------------------------------------------------------
-// Name            Date            Reason
+// Name                Date            Reason
+// Luwam Goitom-Worre  Sept. 21, 2023  completing workshop
 ***********************************************************************/
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
@@ -58,7 +59,7 @@ namespace sdds {
           noOfEmployees = noOfRecords();
           employees = new Employee[noOfEmployees];
 
-          ok = true;
+         
           int i;
           for (i = 0; i < noOfEmployees; i++) {
 
@@ -81,18 +82,15 @@ namespace sdds {
 
    // TODO: Implementation for the display functions go here
    void display(Employee& employees) {
-       //noOfEmployees = load(employees);
+
        cout << employees.m_empNo << ": " << employees.m_name << ", $";
        cout.setf(ios::fixed);
        cout.precision(0);
        cout << employees.m_salary << endl;
-       //return read(employees.m_empNo) && read(employees.....) && read(.....);
 
    }
-   //int recs = noOfRecords();
-   //bool(fptr, title, records, recs);
    void display() {
-       cout << "Employee Salary Report, sorted by employee number" << endl;
+       cout << "Employee Salary report, sorted by employee number" << endl;
        cout << "no- Empno, Name, Salary" << endl;
        cout << "------------------------------------------------" << endl;
        sort();
@@ -100,7 +98,6 @@ namespace sdds {
        int i;
        for (i = 0; i < noOfEmployees; i++) {
 
-           //const Employee& person = employees[i];
            cout << i + 1 << "- ";
            display(employees[i]);
       }
