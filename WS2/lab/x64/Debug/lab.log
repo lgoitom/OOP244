@@ -1,8 +1,8 @@
 ﻿  Employee.cpp
-C:\Documents\OOP244\WS2\lab\Employee.cpp(47,9): error C2084: function 'bool sdds::load(void)' already has a body
-C:\Documents\OOP244\WS2\lab\Employee.cpp(40,9): message : see previous definition of 'load'
-  File.cpp
-  main.cpp
-C:\Documents\OOP244\WS2\lab\main.cpp(17,7): error C3861: 'display': identifier not found
-C:\Documents\OOP244\WS2\lab\main.cpp(19,4): error C3861: 'deallocateMemory': identifier not found
-  Generating Code...
+C:\Documents\OOP244\WS2\lab\Employee.cpp(43,13): warning C4101: 'name': unreferenced local variable
+C:\Documents\OOP244\WS2\lab\Employee.cpp(87,26): warning C4244: 'argument': conversion from 'double' to '_Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+  lab.vcxproj -> C:\Documents\OOP244\WS2\lab\x64\Debug\lab.exe

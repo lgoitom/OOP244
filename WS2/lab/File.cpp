@@ -12,10 +12,13 @@
 ***********************************************************************/
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
+#include <cstring>
 #include "File.h"
 
 namespace sdds {
+    //global variable
    FILE* fptr;
+
    bool openFile(const char filename[]) {
       fptr = fopen(filename, "r");
       return fptr != NULL;
@@ -33,27 +36,30 @@ namespace sdds {
       if (fptr) fclose(fptr);
    }
    // TODO: read functions go here    
-   bool read(FILE* fptr, const char filename[], int records /*char*& name*/) {
-       char name[128]{};
+   bool read(char*& name) {
+       char empName[128];
        int i;
 
-       for (i = 0, i < *&noOfRecords; i++;) {
-           if (fscanf(fptr, "%127[^\n]\n", &name) == 1) {
-               //name == new char
-               //strcpy
+           if (fscanf(fptr, "%127[^\n]\n", &empName) == 1) {
                char *j = new char;
-               char* &name = j;
+               //name == new char
+               strcpy(j, empName);
+               
                return true;
            }
-
+       return false;
+   }
+   bool read(int employeeNum) {
+       if (fscanf(fptr, "%d,", &employeeNum)) {
+           return true;
+       }
+      return false;
+   }
+   bool read(double salary) {
+       if (fscanf(fptr, "%lf,", &salary)) {
+           return true;
        }
        return false;
    }
-   /*bool read(................) {
-      return .....
-   }
-   bool read(................) {
-      return .....
-   }
-   */
+   
 }
