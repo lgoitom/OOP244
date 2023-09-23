@@ -11,6 +11,7 @@
 // Name            Date            Reason
 ***********************************************************************/
 #include "Population.h"
+#include "File.h"
 #include <iostream>
 #include <cstring>
 namespace sdds {
@@ -33,6 +34,17 @@ namespace sdds {
 
     }
     bool load(const char* filename) {
+        if (openFile("PCpopulations.csv")) {
+            return true;
+        }
+
+        return false;
+
+    }
+    void display() {
+
+    }
+    void deallocateMemory() {
 
     }
 

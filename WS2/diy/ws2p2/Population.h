@@ -9,7 +9,8 @@
 // Revision History
 // -----------------------------------------------------------
 // Name            Date            Reason
-***********************************************************************/#ifndef SDDS_POPULATION_H_
+***********************************************************************/
+#ifndef SDDS_POPULATION_H_
 #define SDDS_POPULATION_H_
 #include <iostream>
 
@@ -19,7 +20,8 @@ namespace sdds {
 	bool startsWith(const char* cString, const char* subString);
 	bool getPostalCode(char* postal_code_prefix);
 	bool load(const char* filename);
-
+	void display();
+	void deallocateMemory();
 
 }
 #endif // SDDS_POPULATION_H_

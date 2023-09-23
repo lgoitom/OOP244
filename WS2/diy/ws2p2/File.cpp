@@ -23,5 +23,13 @@ namespace sdds {
     void closeFile() {
         if (fptr) fclose(fptr);
     }
+    bool read(char postal) {
+        if (fscanf(fptr, "%c", &postal) == 1) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 
 }
