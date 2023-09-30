@@ -8,14 +8,15 @@ struct FactorialResults{
 };
 
 int factorial(const int n){
-	return (n <= 1) ? 1 : n * factorial(n - 1); //bug 1: n keeps repeating because n will always be equal to (or less than) n. changed from n <= n to n <= 1
+	return (n <= 1) ? 1 : n * factorial(n - 1); //bug 1: n keeps repeating because n will always be equal to or less than n. changed from n <= n to n <= 1
 }
 int reduceFactorial(const int n){
 	
 		return n; //bug 2: cannot be divided when n is 0, changed fron n/n to n
 
 	
-}void computeFactorials(struct FactorialResults * results, int numFactorials){
+}
+void computeFactorials(struct FactorialResults * results, int numFactorials){
 	int i;
 	for (i = 0; i < numFactorials; i++){
 		results->results[i] = factorial(i); 
@@ -24,7 +25,7 @@ int reduceFactorial(const int n){
 }
 int main(void) { 
 	struct FactorialResults results = { {0}, 0 }; 
-	int i; 
+	int i;
 	computeFactorials(&results, NUM_FACTS); //bug 3: results initializes back to 0 because anpersand wasnt there. changed from results to &results
 	for (i = 0; i < NUM_FACTS; i++) { 
 		results.results[i] = reduceFactorial(results.results[i]);  
