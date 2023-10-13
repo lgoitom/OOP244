@@ -111,7 +111,7 @@ namespace sdds {
            delete[] employees[i].m_name;
        }
        delete[] employees;
-
+       noOfEmployees = 0;
    }
 
 

@@ -12,6 +12,7 @@
 ***********************************************************************/
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
+#include <cstring>
 #include "File.h"
 
 namespace sdds {
@@ -23,13 +24,31 @@ namespace sdds {
     void closeFile() {
         if (fptr) fclose(fptr);
     }
-    bool read(char postal) {
-        if (fscanf(fptr, "%c", &postal) == 1) {
-            return true;
+    int counter() {
+        int occurence = 0;
+        char ch;
+
+        while (fscanf(fptr, "%c", &ch) == 1) {
+            occurence += (ch == '\n');
+            //occurence+=occurence;
         }
-        else {
-            return false;
+        rewind(fptr);
+        return occurence;
+    }
+    bool read(char*& postal) {
+
+        char postalC[7] = { '\0' };
+
+        if (fscanf(fptr, "%3s", postalC) == 1) {
+            postal = new char[strlen(postalC) + 1];
+            strcpy(postal, postalC);
         }
+
+        return postalC[0] != 0;
+    }
+    bool read(int& population) {
+        return fscanf(fptr, "%d\n", &population);
+
     }
 
 }

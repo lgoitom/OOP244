@@ -77,7 +77,6 @@ namespace sdds {
 
 		results = readFile(fileName, p, ch);
 		if (results == 0) {
-			cout << "Failed to open the phone directory file." << endl;
 			return;
 		}
 

@@ -16,10 +16,18 @@
 
 using namespace std;
 namespace sdds {
+
+	struct PostalCode {
+		int population;
+		char* postCode;
+	};
+	void sort();
 	// returns true of the cstring starts with subString
 	bool startsWith(const char* cString, const char* subString);
 	bool getPostalCode(char* postal_code_prefix);
-	bool load(const char* filename);
+	bool load(const char* filename, const char* partial_postal_code_prefix);
+	bool load(PostalCode& postal);
+	//bool load(PostalCode &pc);
 	void display();
 	void deallocateMemory();
 

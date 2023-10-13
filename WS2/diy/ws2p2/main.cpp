@@ -2,7 +2,7 @@
 // OOP244 Workshop #2 DIY (part 2): tester program
 //
 // File  main.cpp
-// Version 1.0
+// Version 1.1 (same as main_prof.cpp)
 // Author   Fardad Soleimanloo
 // Description
 //
@@ -10,12 +10,16 @@
 // -----------------------------------------------------------
 // Name            Date            Reason
 ***********************************************************************/
+#include <iostream>
 #include "Population.h"
 using namespace sdds;
 int main() {
-    if (load("PCpopulations.csv")) {
-        display();
+    char code[4]{};
+    while (getPostalCode(code)) {
+        if (load("PCpopulations.csv", code)) {
+            display();
+        }
+        deallocateMemory();
     }
-    deallocateMemory();
     return 0;
 }

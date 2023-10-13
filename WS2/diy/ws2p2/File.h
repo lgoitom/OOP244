@@ -15,6 +15,9 @@
 namespace sdds {
 	bool openFile(const char filename[]);
 	void closeFile();
+	bool read(char*& postal);
+	bool read(int& population);
+	int counter();
 
 
 }
