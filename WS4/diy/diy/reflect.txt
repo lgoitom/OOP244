@@ -1,0 +1,5 @@
+During this workshop session, our focus remained on the essential task of initializing class member variables. It is crucial to understand that when initializing references, there is a strict requirement for them to be associated with an object right from the beginning. In contrast, when initializing objects within a class, it is imperative to call the default constructor.
+
+Furthermore, we delved deeper into the concept of constructor overloading, which involves having multiple constructors within a class, all sharing the same name. This feature allows us to create objects with varying sets of parameters, enhancing the flexibility and usability of our classes.
+
+One challenge I encountered during the workshop involved meticulously aligning the frames and empty spaces within the code. Achieving the desired layout and visual presentation took a considerable amount of trial and error. Nevertheless, I eventually attained the desired output, which involved much practice and perseverance in the learning process.

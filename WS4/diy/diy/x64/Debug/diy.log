@@ -1,0 +1,7 @@
+﻿  Label.cpp
+C:\Documents\OOP244\WS4\diy\diy\Label.cpp(20,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Documents\OOP244\WS4\diy\diy\Label.cpp(94,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  LabelMaker.cpp
+  main.cpp
+  Generating Code...
+  diy.vcxproj -> C:\Documents\OOP244\WS4\diy\x64\Debug\diy.exe

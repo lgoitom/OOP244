@@ -1,0 +1,13 @@
+﻿  Date.cpp
+  DateTester.cpp
+  Utils.cpp
+  Generating Code...
+Date.obj : error LNK2019: unresolved external symbol "public: __cdecl sdds::Status::Status(char const *)" (??0Status@sdds@@QEAA@PEBD@Z) referenced in function "public: __cdecl sdds::Date::Date(int,int,int)" (??0Date@sdds@@QEAA@HHH@Z)
+Date.obj : error LNK2019: unresolved external symbol "public: class sdds::Status & __cdecl sdds::Status::operator=(char const *)" (??4Status@sdds@@QEAAAEAV01@PEBD@Z) referenced in function "private: bool __cdecl sdds::Date::validate(void)" (?validate@Date@sdds@@AEAA_NXZ)
+Date.obj : error LNK2019: unresolved external symbol "public: class sdds::Status & __cdecl sdds::Status::operator=(int)" (??4Status@sdds@@QEAAAEAV01@H@Z) referenced in function "private: bool __cdecl sdds::Date::validate(void)" (?validate@Date@sdds@@AEAA_NXZ)
+Date.obj : error LNK2019: unresolved external symbol "public: __cdecl sdds::Status::operator bool(void)const " (??BStatus@sdds@@QEBA_NXZ) referenced in function "public: __cdecl sdds::Date::operator bool(void)const " (??BDate@sdds@@QEBA_NXZ)
+Date.obj : error LNK2019: unresolved external symbol "public: class sdds::Status & __cdecl sdds::Status::clear(void)" (?clear@Status@sdds@@QEAAAEAV12@XZ) referenced in function "private: bool __cdecl sdds::Date::validate(void)" (?validate@Date@sdds@@AEAA_NXZ)
+Date.obj : error LNK2019: unresolved external symbol "public: __cdecl sdds::Status::~Status(void)" (??1Status@sdds@@QEAA@XZ) referenced in function "int `public: __cdecl sdds::Date::Date(int,int,int)'::`1'::dtor$0" (?dtor$0@?0???0Date@sdds@@QEAA@HHH@Z@4HA)
+DateTester.obj : error LNK2001: unresolved external symbol "public: __cdecl sdds::Status::~Status(void)" (??1Status@sdds@@QEAA@XZ)
+DateTester.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl sdds::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class sdds::Status const &)" (??6sdds@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVStatus@0@@Z) referenced in function "void __cdecl testDate(void)" (?testDate@@YAXXZ)
+C:\Documents\OOP244\MS1\MS1\x64\Debug\MS1.exe : fatal error LNK1120: 7 unresolved externals

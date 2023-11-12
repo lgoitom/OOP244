@@ -1,0 +1,3 @@
+﻿  Train.cpp
+C:\Documents\OOP244\WS3\diy\Train.cpp(178,86): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  diy.vcxproj -> C:\Documents\OOP244\WS3\diy\x64\Debug\diy.exe

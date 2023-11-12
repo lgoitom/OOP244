@@ -1,0 +1,9 @@
+In this workshop, we started to work with friend functions. These functions are global functions that can access private, public, and protected members of a class. It is denoted by the keyword 'friend'. This is helpful if special access is required to share members of a private class.
+
+We also continued to define and implement multiple different constructors, specifically with the rule of three. Istream and ostream were also used to read and write from the formatted data in the csv file.
+
+We also used operator overloading which can greatly enhance the usability and readability of our code when working with custom classes.
+
+One of the challenging issues encountered during the workshop was fixing the code when dealing with a large dataset. We had to carefully manage memory and improve the efficiency of the data processing code to ensure that the software remains responsive.
+
+Overall, this workshop and project milestones have expanded my knowledge of C++ programming, especially in the areas of friend functions, operator overloading, and dynamic memory management.

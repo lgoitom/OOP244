@@ -1,0 +1,7 @@
+﻿  main.cpp
+  Portfolio.cpp
+C:\Documents\OOP244\WS5\diy\diy\Portfolio.cpp(105,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Documents\OOP244\WS5\diy\diy\Portfolio.cpp(126,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Documents\OOP244\WS5\diy\diy\Portfolio.cpp(137,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  diy.vcxproj -> C:\Documents\OOP244\WS5\diy\x64\Debug\diy.exe

@@ -4,7 +4,7 @@ using namespace sdds;
 using namespace std;
 int main() {
 	char filename[256];
-	programTitle();
+	programTitle(); 
 	cout << "Enter filename: ";
 	cin >> filename;
 	wordStats(filename);
