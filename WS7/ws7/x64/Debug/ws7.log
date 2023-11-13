@@ -1,0 +1,10 @@
+﻿  Container.cpp
+C:\Documents\OOP244\WS7\ws7\Container.cpp(102,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Documents\OOP244\WS7\ws7\Container.cpp(107,16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Documents\OOP244\WS7\ws7\Container.cpp(112,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Documents\OOP244\WS7\ws7\Container.cpp(127,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Documents\OOP244\WS7\ws7\Container.cpp(138,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Pack.cpp
+  main.cpp
+  Generating Code...
+  ws7.vcxproj -> C:\Documents\OOP244\WS7\ws7\x64\Debug\ws7.exe

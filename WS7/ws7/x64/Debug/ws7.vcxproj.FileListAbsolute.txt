@@ -1,0 +1,2 @@
+C:\Documents\OOP244\WS6\ws7\x64\Debug\ws7.exe
+C:\Documents\OOP244\WS7\ws7\x64\Debug\ws7.exe
