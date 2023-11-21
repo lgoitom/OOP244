@@ -1,0 +1,5 @@
+Throughout this workshop, we focused on virtual functions with inheritance. This concept employs a reference of a base class type to access virtual functions. The workshop demonstrated this through the utilization of four distinct classes, each accessed virtually via different functions. The usefulness of virtual functions lies in their ability to enable efficient reuse of class members across code, making for more code efficiency and flexibility.
+
+I encountered a hurdle primarily related to the display of shape outputs. This was because of mismatched variable types, which affected the functionality of subsequent functions. This demonstrated the significance of precision in variable handling, showing how seemingly minor discrepancies can significantly impact the entire functionality. Debugging this not only resolved the immediate issue but also offered taught me a lesson in variable handling and its impact on the rest of the program.
+
+Overall, this workshop not only enriched my understanding of virtual functions and inheritance but also underscored the critical importance of attention to detail in variable management.
