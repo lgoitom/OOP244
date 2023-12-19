@@ -1,0 +1,9 @@
+﻿  iProduct.cpp
+  Item.cpp
+  main.cpp
+  Status.cpp
+  Utils.cpp
+C:\Documents\OOP244\MS3\New folder (3)\Project1\Utils.cpp(133,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Documents\OOP244\MS3\New folder (3)\Project1\Utils.cpp(134,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Project1.vcxproj -> C:\Documents\OOP244\MS3\New folder (3)\Project1\x64\Debug\Project1.exe
