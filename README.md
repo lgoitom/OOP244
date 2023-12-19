@@ -1,3 +1,3 @@
 # OOP244
 
-OOP244 stuff???
+OOP244 milestones and workshops
